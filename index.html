@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0c0918" />
+    <meta name="theme-color" content="#130d20" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
@@ -69,6 +69,7 @@
     </script>
 
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/redesign.css" />
 
     <script>
       document.documentElement.classList.add('js');
@@ -499,7 +500,8 @@
             <p class="eyebrow">Sua presença é importante</p>
             <h2 class="section__title" id="rsvp-titulo">Confirme sua presença</h2>
             <p class="section__subtitle">
-              Por favor, confirme até <strong>01 de agosto de 2027</strong> para que possamos
+              Por favor, confirme até
+              <strong data-event-rsvp-deadline>01 de agosto de 2027</strong> para que possamos
               organizar tudo com carinho.
             </p>
           </header>
@@ -651,7 +653,7 @@
     <footer class="site-footer">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <p class="footer__title">Aniversário de Uálace Brito</p>
+          <p class="footer__title">Aniversário de <span data-event-name>Uálace Brito</span></p>
           <p class="footer__date">15 de agosto de 2027 · Espaço Villa Jardim</p>
           <p class="footer__message">
             Obrigado por fazer parte da minha história. Nos vemos lá! 🥂

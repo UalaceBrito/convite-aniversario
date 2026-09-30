@@ -34,4 +34,15 @@ test.describe('Navegação', () => {
     await expect(page.locator('[data-event-name]').first()).toHaveText('Uálace Brito');
     expect(dataRequests).toHaveLength(3);
   });
+
+  test('adapta o convite ao celular sem rolagem horizontal', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto('/');
+
+    await expect(page.locator('.hero__title')).toBeVisible();
+    await expect(page.locator('[data-gallery] .gallery__item')).toHaveCount(6);
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+    ).toBe(true);
+  });
 });
