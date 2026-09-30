@@ -1,0 +1,53 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+.cache/
+.vite/
+.parcel-cache/
+
+# Testes
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+blob-report/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editores
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# SO
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Lighthouse
+.lighthouseci/
+
+# Local agent configuration
+.claude/
+/{

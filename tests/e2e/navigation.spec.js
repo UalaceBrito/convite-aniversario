@@ -1,0 +1,24 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('Navegação', () => {
+  test('renderiza o header e o hero', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Meu Aniversário');
+    await expect(page.getByRole('link', { name: /confirmar presença/i })).toBeVisible();
+  });
+
+  test('menu mobile abre e fecha', async ({ page }) => {
+    await page.setViewportSize({ width: 480, height: 800 });
+    await page.goto('/');
+    const toggle = page.locator('#navToggle');
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    await page.keyboard.press('Escape');
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('contagem regressiva está renderizada', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('[data-unit="dias"]')).not.toHaveText('');
+  });
+});

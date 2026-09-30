@@ -1,0 +1,64 @@
+.rsvp__card {
+  position: relative;
+  max-width: 800px;
+  margin-inline: auto;
+  padding: clamp(1.6rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(180deg, rgb(227 188 106 / 0.07), rgb(255 255 255 / 0.012)), var(--surface-solid);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding: clamp(1.25rem, 3vw, 1.9rem);
+  border: 1px solid rgb(227 188 106 / 0.4);
+  border-radius: var(--r-md);
+  background: linear-gradient(135deg, rgb(227 188 106 / 0.14), rgb(139 108 240 / 0.1));
+  animation: pop-in 0.45s var(--ease) both;
+}
+
+.form-success[hidden] {
+  display: none;
+}
+
+.form-success__icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.form-success__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.35rem;
+}
+
+.form-success__text {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.9375rem;
+}
+
+.form-success__text strong {
+  color: var(--gold);
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (width <= 720px) {
+  .form-success {
+    flex-direction: column;
+  }
+}

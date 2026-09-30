@@ -1,0 +1,112 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.about__content .section__title {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.about__content .eyebrow::after {
+  margin-inline: 0;
+}
+
+.about__content p {
+  color: var(--text-soft);
+  margin-bottom: 1.05rem;
+  max-width: 60ch;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.7rem;
+  margin: 1.75rem 0 2.1rem;
+}
+
+.about__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line-soft);
+  background: var(--surface);
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  transition:
+    border-color var(--t) ease,
+    background-color var(--t) ease;
+}
+
+.about__list li:hover {
+  border-color: var(--line);
+  background: var(--surface-hover);
+}
+
+.about__list li span[aria-hidden] {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.about__card {
+  padding: clamp(1.5rem, 3.5vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(180deg, rgb(227 188 106 / 0.09), rgb(255 255 255 / 0.015)), var(--surface-solid);
+  box-shadow:
+    var(--shadow-md),
+    0 0 0 1px rgb(0 0 0 / 0.25) inset;
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+}
+
+.about__card-title {
+  font-size: 1.35rem;
+  margin-bottom: 1.35rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.summary__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed rgb(255 255 255 / 0.07);
+}
+
+.summary__row:last-child {
+  border-bottom: 0;
+}
+
+.summary dt {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.summary dd {
+  margin: 0;
+  text-align: right;
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+@media (width <= 1024px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about__card {
+    position: static;
+  }
+}

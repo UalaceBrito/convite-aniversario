@@ -1,0 +1,76 @@
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(900px 520px at 12% -6%, rgb(139 108 240 / 0.2), transparent 62%),
+    radial-gradient(760px 480px at 92% 4%, rgb(239 127 168 / 0.14), transparent 60%),
+    radial-gradient(900px 700px at 50% 108%, rgb(227 188 106 / 0.1), transparent 65%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: clamp(0.975rem, 0.35vw + 0.9rem, 1.0625rem);
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--gold);
+  transition: color var(--t-fast) ease;
+}
+
+a:hover {
+  color: #f3d79a;
+}
+
+::selection {
+  background: rgb(227 188 106 / 0.3);
+  color: #fff;
+}
+
+:focus {
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+section[id],
+main[id] {
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
+
+@media (forced-colors: active) {
+  .section__title,
+  .hero__title-name,
+  .countdown__value {
+    background: none !important;
+    color: CanvasText !important;
+    -webkit-text-fill-color: CanvasText !important;
+  }
+}

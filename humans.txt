@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: [SEU NOME]
+  Contact: aniversario@exemplo.com
+  Location: São Paulo, SP — Brasil
+
+/* SITE */
+  Last update: 2027/08/01
+  Language: Português (pt-BR)
+  Standards: HTML5, CSS3, ES2020
+  Components: Vite, Vitest, Playwright

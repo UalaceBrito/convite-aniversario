@@ -1,0 +1,60 @@
+@media print {
+  @page {
+    margin: 1.2cm;
+  }
+
+  body {
+    background: #fff !important;
+    background-image: none !important;
+    color: #111;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .nav,
+  .nav-toggle,
+  .skip-link,
+  .hero__visual,
+  .countdown,
+  .map,
+  .rsvp__card form,
+  .site-footer {
+    display: none !important;
+  }
+
+  .section,
+  .hero {
+    padding-block: 1rem;
+    border: 0;
+    background: none;
+    content-visibility: visible !important;
+  }
+
+  .card,
+  .about__card,
+  .schedule__body {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    background: none;
+    break-inside: avoid;
+  }
+
+  .hero__title-name,
+  .section__title,
+  .countdown__value {
+    background: none !important;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+  }
+
+  a {
+    color: #111;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+  }
+}

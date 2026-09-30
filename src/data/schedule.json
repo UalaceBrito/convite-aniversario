@@ -1,0 +1,23 @@
+[
+  {
+    "time": "19:00",
+    "title": "Recepção dos convidados",
+    "description": "Coquetel de boas-vindas e fotos na entrada."
+  },
+  { "time": "20:00", "title": "Jantar", "description": "Serviço à mesa com opções vegetarianas." },
+  {
+    "time": "21:30",
+    "title": "Momento especial",
+    "description": "Discurso, agradecimentos e corte do bolo."
+  },
+  {
+    "time": "22:00",
+    "title": "Música e comemoração",
+    "description": "Pista de dança aberta com playlist especial."
+  },
+  {
+    "time": "00:00",
+    "title": "Encerramento",
+    "description": "Despedida e agradecimento aos presentes."
+  }
+]

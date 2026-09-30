@@ -1,0 +1,19 @@
+{
+  "name": "Aniversário de [SEU NOME]",
+  "short_name": "Aniversário",
+  "description": "Convite digital para o aniversário de [SEU NOME] — 15 de agosto de 2027.",
+  "start_url": "./?utm_source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0c0918",
+  "theme_color": "#0c0918",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["events", "lifestyle"],
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./maskable-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,72 @@
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero__frame {
+    animation: none;
+  }
+
+  .map__pin::after {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .site-header,
+  .nav,
+  .hero__badge,
+  .map__label {
+    background: var(--bg) !important;
+    backdrop-filter: none !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --text-soft: #e6e1f5;
+    --text-muted: #cfc8e4;
+    --line-soft: rgb(255 255 255 / 0.22);
+    --line: rgb(227 188 106 / 0.45);
+  }
+}
+
+@media (forced-colors: active) {
+  .btn,
+  .card,
+  .about__card,
+  .countdown__item,
+  .schedule__body,
+  .field input,
+  .field select,
+  .field textarea {
+    border-color: ButtonBorder;
+  }
+
+  .btn--primary {
+    background: ButtonFace;
+    color: ButtonText;
+  }
+
+  .map__pin {
+    background: Highlight;
+  }
+
+  .schedule__item::before {
+    border-color: Highlight;
+  }
+}

@@ -1,0 +1,33 @@
+/* ==========================================================================
+   ENTRY POINT — Convite Digital
+   Camadas de cascata: reset < tokens < base < layout < components <
+   sections < utilities < a11y
+   ========================================================================== */
+
+@layer reset, tokens, base, layout, components, sections, utilities, a11y;
+
+@import url("./base/_reset.css") layer(reset);
+@import url("./base/_tokens.css") layer(tokens);
+@import url("../assets/fonts/fonts.css") layer(base);
+@import url("./base/_typography.css") layer(base);
+@import url("./layout/_container.css") layer(layout);
+@import url("./layout/_header.css") layer(layout);
+@import url("./layout/_footer.css") layer(layout);
+@import url("./components/_buttons.css") layer(components);
+@import url("./components/_badges.css") layer(components);
+@import url("./components/_cards.css") layer(components);
+@import url("./components/_countdown.css") layer(components);
+@import url("./components/_forms.css") layer(components);
+@import url("./components/_gallery.css") layer(components);
+@import url("./components/_map.css") layer(components);
+@import url("./components/_schedule.css") layer(components);
+@import url("./sections/_hero.css") layer(sections);
+@import url("./sections/_about.css") layer(sections);
+@import url("./sections/_location.css") layer(sections);
+@import url("./sections/_rsvp.css") layer(sections);
+@import url("./utilities/_animations.css") layer(utilities);
+@import url("./utilities/_helpers.css") layer(utilities);
+@import url("./utilities/reveal.css") layer(utilities);
+@import url("./utilities/_print.css") layer(utilities);
+@import url("./a11y/preferences.css") layer(a11y);
+@import url("./a11y/skip-link.css") layer(a11y);

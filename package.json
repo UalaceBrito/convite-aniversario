@@ -1,0 +1,76 @@
+{
+  "name": "convite-aniversario",
+  "version": "1.0.0",
+  "description": "Convite digital interativo para aniversário — projeto acadêmico de desenvolvimento web de nível expert.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "author": {
+    "name": "[SEU NOME]",
+    "email": "aniversario@exemplo.com",
+    "url": "https://exemplo.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "convite",
+    "aniversario",
+    "pwa",
+    "acessibilidade",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint \"src/**/*.js\" \"scripts/**/*.mjs\" \"tests/**/*.js\"",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "format": "prettier --write \"**/*.{html,css,js,mjs,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,mjs,json,md,yml,yaml}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test --project=chromium",
+    "test:a11y": "playwright test tests/a11y",
+    "optimize:img": "node scripts/optimize-images.mjs",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "lighthouse": "lhci autorun --config=scripts/lighthouse-budget.json",
+    "prepare": "husky install || true"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "@lhci/cli": "^0.13.0",
+    "@playwright/test": "^1.44.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^9.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "sharp": "^0.33.4",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.0",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
+  },
+  "lint-staged": {
+    "*.{js,mjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{html,json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
+}

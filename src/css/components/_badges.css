@@ -1,0 +1,24 @@
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+  padding-left: 0.22em;
+}
+
+.eyebrow::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 1px;
+  margin: 0.65rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.section__header .eyebrow::after {
+  margin-inline: auto;
+}

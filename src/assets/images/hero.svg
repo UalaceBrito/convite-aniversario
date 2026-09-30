@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="50" x2="570" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#261B46"/>
+      <stop offset="1" stop-color="#100C1E"/>
+    </linearGradient>
+    <linearGradient id="cake" x1="225" y1="320" x2="430" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0D2"/>
+      <stop offset="1" stop-color="#E8B9A2"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="245" y1="290" x2="420" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6DE9B"/>
+      <stop offset="1" stop-color="#D49A42"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 260 -260 0 320 305)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A77FF4" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#A77FF4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="640" rx="36" fill="url(#bg)"/>
+  <rect width="640" height="640" rx="36" fill="url(#glow)"/>
+  <circle cx="320" cy="320" r="238" stroke="#E3BC6A" stroke-opacity=".18"/>
+  <circle cx="320" cy="320" r="208" stroke="#E3BC6A" stroke-opacity=".1"/>
+  <path d="m110 150 8 19 19 8-19 8-8 19-8-19-19-8 19-8 8-19Zm414 104 6 15 15 6-15 6-6 15-6-15-15-6 15-6 6-15ZM167 470l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12Z" fill="#F6DE9B"/>
+  <path d="m470 430 7 18 18 7-18 7-7 18-7-18-18-7 18-7 7-18Z" fill="#EF7FA8" fill-opacity=".8"/>
+  <path d="M175 213c-31-51-3-93 30-90 27 3 35 38 24 72-10 30-29 51-46 48-10-2-19-13-22-30" stroke="#E3BC6A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M185 241c22-34 36-62 41-86" stroke="#E3BC6A" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M468 170c21-37 60-40 72-15 11 22-5 50-29 67-25 18-53 24-64 10-7-9-5-23 3-38" stroke="#EF7FA8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M452 226c26-22 49-43 66-67" stroke="#EF7FA8" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M236 383c0-13 38-24 84-24s84 11 84 24v73c0 14-38 25-84 25s-84-11-84-25v-73Z" fill="url(#cake)"/>
+  <ellipse cx="320" cy="383" rx="84" ry="25" fill="#FFF8E8"/>
+  <path d="M236 414c0-13 38-24 84-24s84 11 84 24v48c0 14-38 25-84 25s-84-11-84-25v-48Z" fill="url(#gold)"/>
+  <ellipse cx="320" cy="414" rx="84" ry="25" fill="#F8E3B1"/>
+  <path d="M267 324c0-10 24-18 53-18s53 8 53 18v42c0 10-24 18-53 18s-53-8-53-18v-42Z" fill="url(#cake)"/>
+  <ellipse cx="320" cy="324" rx="53" ry="18" fill="#FFF8E8"/>
+  <path d="M274 346c6 9 15 9 21 0s15-9 21 0 15 9 21 0 15-9 21 0" stroke="#EF7FA8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M320 263v42" stroke="#F6DE9B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M320 250c-13 15-13 24 0 28 13-4 13-13 0-28Z" fill="#F6DE9B"/>
+  <path d="M298 296v17m44-17v17" stroke="#D49A42" stroke-width="3" stroke-linecap="round"/>
+  <path d="M247 430c11 8 24 10 37 5m62 1c11 5 24 4 35-4" stroke="#FFF5D7" stroke-opacity=".75" stroke-width="4" stroke-linecap="round"/>
+  <path d="m125 320 17 5-14 11-3-16Zm394 70-18 4 7-16 11 12ZM387 150l-5 18-12-13 17-5Z" fill="#A98AF5"/>
+  <text x="320" y="554" fill="#F6DE9B" font-family="Georgia,serif" font-size="19" font-style="italic" letter-spacing="4" text-anchor="middle">UMA NOITE PARA CELEBRAR</text>
+</svg>

@@ -1,0 +1,11 @@
+[
+  { "src": "galeria-1.svg", "alt": "Ilustração de um bolo de aniversário decorado" },
+  { "src": "galeria-2.svg", "alt": "Ilustração de balões coloridos de festa" },
+  { "src": "galeria-3.svg", "alt": "Ilustração de duas taças brindando" },
+  {
+    "src": "galeria-4.svg",
+    "alt": "Ilustração de notas musicais representando a trilha sonora da festa"
+  },
+  { "src": "galeria-5.svg", "alt": "Ilustração de caixas de presente" },
+  { "src": "galeria-6.svg", "alt": "Ilustração de brilhos e confetes celebrando" }
+]

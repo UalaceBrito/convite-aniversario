@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css"],
+  "eslint.validate": ["javascript"],
+  "editor.tabSize": 2,
+  "editor.rulers": [100]
+}

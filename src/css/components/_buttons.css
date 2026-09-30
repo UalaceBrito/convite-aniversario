@@ -1,0 +1,141 @@
+.btn {
+  --btn-py: 0.85rem;
+  --btn-px: 1.7rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: var(--btn-py) var(--btn-px);
+  border: 1px solid transparent;
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform var(--t) var(--ease),
+    box-shadow var(--t) var(--ease),
+    background-color var(--t) var(--ease),
+    border-color var(--t) var(--ease),
+    color var(--t) var(--ease);
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.985);
+}
+
+.btn[disabled],
+.btn[aria-disabled="true"] {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.btn--primary {
+  background: var(--grad-gold);
+  color: #2a1d05;
+  box-shadow: 0 12px 28px -14px rgb(227 188 106 / 0.75);
+}
+
+.btn--primary:hover {
+  color: #1f1503;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -16px rgb(227 188 106 / 0.9);
+}
+
+.btn--ghost {
+  background: rgb(255 255 255 / 0.03);
+  border-color: var(--line);
+  color: var(--text);
+  backdrop-filter: blur(6px);
+}
+
+.btn--ghost:hover {
+  color: var(--gold);
+  border-color: rgb(227 188 106 / 0.5);
+  background: var(--gold-soft);
+  transform: translateY(-2px);
+}
+
+.btn--sm {
+  --btn-py: 0.6rem;
+  --btn-px: 1.15rem;
+
+  font-size: 0.85rem;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+@media (width <= 480px) {
+  .btn {
+    --btn-px: 1.35rem;
+
+    width: 100%;
+  }
+}
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line-soft);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    background-color var(--t) ease,
+    border-color var(--t) ease,
+    transform var(--t) var(--ease);
+}
+
+.theme-toggle:hover {
+  background: var(--surface-hover);
+  border-color: var(--line);
+  transform: rotate(-8deg);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+  grid-area: 1 / 1;
+  font-size: 1rem;
+  line-height: 1;
+  transition:
+    opacity var(--t) ease,
+    transform var(--t) var(--ease);
+}
+
+/* Escuro: mostra sol (ação = clarear) */
+[data-theme="dark"] .theme-toggle__icon--sun {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* Claro: mostra lua (ação = escurecer) */
+[data-theme="light"] .theme-toggle__icon--sun {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+[data-theme="light"] .theme-toggle__icon--moon {
+  opacity: 1;
+  transform: scale(1);
+}

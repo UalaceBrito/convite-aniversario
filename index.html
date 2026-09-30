@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0c0918" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <title>Aniversário de Uálace Brito · 15 de Agosto de 2027</title>
+
+    <meta
+      name="description"
+      content="Convite digital para o aniversário de Uálace Brito — 15 de agosto de 2027, às 19h, no Espaço Villa Jardim. Confirme sua presença!"
+    />
+    <meta name="author" content="Uálace Brito" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://exemplo.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Aniversário de Uálace Brito" />
+    <meta property="og:title" content="Aniversário de Uálace Brito · 15 de Agosto de 2027" />
+    <meta
+      property="og:description"
+      content="Você é meu convidado especial. Confirme sua presença até 01/08/2027."
+    />
+    <meta property="og:image" content="./og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Convite para o aniversário de [SEU NOME]" />
+    <meta property="og:url" content="https://exemplo.com/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aniversário de Uálace Brito · 15 de Agosto de 2027" />
+    <meta
+      name="twitter:description"
+      content="Você é meu convidado especial. Confirme sua presença até 01/08/2027."
+    />
+    <meta name="twitter:image" content="./og-cover.jpg" />
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="mask-icon" href="./favicon.svg" color="#e3bc6a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme =
+            stored === 'light' || stored === 'dark' ? stored : prefersDark ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Aniversário de [Uálace Brito]",
+        "startDate": "2027-08-15T19:00:00-03:00",
+        "endDate": "2027-08-16T00:00:00-03:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Espaço Villa Jardim",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua das Acácias, 123",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "00000-000",
+            "addressCountry": "BR"
+          }
+        },
+        "image": ["./og-cover.jpg"],
+        "description": "Uma noite especial para celebrar mais um ano de histórias, conquistas e novos momentos."
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="site-header" id="topo">
+      <div class="container header__inner">
+        <a class="brand" href="#topo" aria-label="Ir para o topo da página">
+          <span class="brand__mark" aria-hidden="true">🎂</span>
+          <span class="brand__text"> Aniversário <strong>Uálace Brito</strong> </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Abrir menu de navegação"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-pressed="true"
+          aria-label="Ativar tema claro"
+        >
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        </button>
+
+        <nav class="nav" id="primaryNav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#sobre">Sobre</a></li>
+            <li><a class="nav__link" href="#programacao">Programação</a></li>
+            <li><a class="nav__link" href="#local">Local</a></li>
+            <li><a class="nav__link" href="#galeria">Galeria</a></li>
+            <li><a class="nav__link" href="#informacoes">Informações</a></li>
+            <li>
+              <a class="btn btn--primary btn--sm nav__cta" href="#rsvp">Confirmar presença</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content reveal">
+            <p class="eyebrow">Você é meu convidado especial</p>
+            <h1 class="hero__title" id="hero-title">
+              Meu Aniversário
+              <span class="hero__title-name">Uálace Brito</span>
+            </h1>
+            <p class="hero__tagline">
+              Uma noite especial para celebrar mais um ano de histórias, conquistas e novos
+              momentos.
+            </p>
+
+            <ul class="hero__meta">
+              <li>
+                <span class="hero__meta-icon" aria-hidden="true">📅</span>
+                <span class="hero__meta-text">
+                  <strong>Data</strong>
+                  <span>15 de agosto de 2027</span>
+                </span>
+              </li>
+              <li>
+                <span class="hero__meta-icon" aria-hidden="true">🕗</span>
+                <span class="hero__meta-text">
+                  <strong>Horário</strong>
+                  <span>19h00</span>
+                </span>
+              </li>
+              <li>
+                <span class="hero__meta-icon" aria-hidden="true">📍</span>
+                <span class="hero__meta-text">
+                  <strong>Local</strong>
+                  <span>Espaço Villa Jardim</span>
+                </span>
+              </li>
+            </ul>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#rsvp">Confirmar presença</a>
+              <a class="btn btn--ghost" href="#sobre">Saber mais</a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="hero__frame">
+              <img
+                src="./src/assets/images/hero.svg"
+                alt="Ilustração decorativa com balões e confetes em tons de dourado, rosa e roxo"
+                width="640"
+                height="640"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <p class="hero__badge" aria-hidden="true">15 · 08 · 2027</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contagem" aria-labelledby="contagem-titulo">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow">Não perca a hora</p>
+            <h2 class="section__title" id="contagem-titulo">Contagem regressiva</h2>
+            <p class="section__subtitle">A celebração começa em:</p>
+          </header>
+
+          <div
+            class="countdown reveal"
+            data-countdown="2027-08-15T19:00:00-03:00"
+            role="group"
+            aria-label="Contagem regressiva para o início da festa"
+            aria-live="off"
+          >
+            <div class="countdown__item">
+              <span class="countdown__value" data-unit="dias">00</span>
+              <span class="countdown__label">Dias</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__value" data-unit="horas">00</span>
+              <span class="countdown__label">Horas</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__value" data-unit="minutos">00</span>
+              <span class="countdown__label">Minutos</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__value" data-unit="segundos">00</span>
+              <span class="countdown__label">Segundos</span>
+            </div>
+          </div>
+
+          <p class="countdown__message" data-countdown-message hidden>
+            🎉 O grande dia chegou! Nos vemos na festa.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container about">
+          <div class="about__content reveal">
+            <p class="eyebrow">Sobre o evento</p>
+            <h2 class="section__title" id="sobre-titulo">Mais que uma festa, um reencontro</h2>
+            <p>
+              Este ano decidi celebrar de um jeito diferente: reunindo em um só lugar as pessoas que
+              fizeram parte da minha história. Será uma noite leve, elegante e cheia de bons
+              momentos — do jantar à pista de dança.
+            </p>
+            <p>
+              Preparamos um ambiente acolhedor, com música, boa comida e espaço de sobra para
+              conversar, rir e brindar. Sua presença é o que torna essa noite realmente especial.
+            </p>
+
+            <ul class="about__list">
+              <li><span aria-hidden="true">🥂</span> Coquetel de boas-vindas</li>
+              <li><span aria-hidden="true">🍽️</span> Jantar servido à mesa</li>
+              <li><span aria-hidden="true">🎶</span> Playlist e pista de dança</li>
+              <li><span aria-hidden="true">📸</span> Espaço instagramável</li>
+            </ul>
+
+            <a class="btn btn--ghost" href="#rsvp">Quero participar</a>
+          </div>
+
+          <aside class="about__card reveal" aria-label="Resumo das informações do evento">
+            <h3 class="about__card-title">Resumo</h3>
+            <dl class="summary">
+              <div class="summary__row">
+                <dt>Data</dt>
+                <dd>15 de agosto de 2027</dd>
+              </div>
+              <div class="summary__row">
+                <dt>Horário</dt>
+                <dd>19h00 às 00h00</dd>
+              </div>
+              <div class="summary__row">
+                <dt>Local</dt>
+                <dd>Espaço Villa Jardim</dd>
+              </div>
+              <div class="summary__row">
+                <dt>Traje</dt>
+                <dd>Esporte fino</dd>
+              </div>
+              <div class="summary__row">
+                <dt>Confirmação</dt>
+                <dd>Até 01 de agosto de 2027</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="programacao" aria-labelledby="programacao-titulo">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow">Roteiro da noite</p>
+            <h2 class="section__title" id="programacao-titulo">Programação</h2>
+            <p class="section__subtitle">
+              Cada momento foi pensado para que você aproveite a noite do início ao fim.
+            </p>
+          </header>
+
+          <ol class="schedule reveal">
+            <li class="schedule__item">
+              <span class="schedule__time">19:00</span>
+              <div class="schedule__body">
+                <h3 class="schedule__title">Recepção dos convidados</h3>
+                <p class="schedule__desc">Coquetel de boas-vindas e fotos na entrada.</p>
+              </div>
+            </li>
+            <li class="schedule__item">
+              <span class="schedule__time">20:00</span>
+              <div class="schedule__body">
+                <h3 class="schedule__title">Jantar</h3>
+                <p class="schedule__desc">Serviço à mesa com opções vegetarianas.</p>
+              </div>
+            </li>
+            <li class="schedule__item">
+              <span class="schedule__time">21:30</span>
+              <div class="schedule__body">
+                <h3 class="schedule__title">Momento especial</h3>
+                <p class="schedule__desc">Discurso, agradecimentos e corte do bolo.</p>
+              </div>
+            </li>
+            <li class="schedule__item">
+              <span class="schedule__time">22:00</span>
+              <div class="schedule__body">
+                <h3 class="schedule__title">Música e comemoração</h3>
+                <p class="schedule__desc">Pista de dança aberta com playlist especial.</p>
+              </div>
+            </li>
+            <li class="schedule__item">
+              <span class="schedule__time">00:00</span>
+              <div class="schedule__body">
+                <h3 class="schedule__title">Encerramento</h3>
+                <p class="schedule__desc">Despedida e agradecimento aos presentes.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="local" aria-labelledby="local-titulo">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow">Onde vamos celebrar</p>
+            <h2 class="section__title" id="local-titulo">Localização</h2>
+          </header>
+
+          <div class="location">
+            <div class="location__info reveal">
+              <h3 class="location__name">Espaço Villa Jardim</h3>
+
+              <ul class="location__list">
+                <li>
+                  <span class="location__icon" aria-hidden="true">📍</span>
+                  <span>
+                    <strong>Endereço</strong><br />
+                    Rua das Acácias, 123 — Jardim Primavera<br />
+                    São Paulo / SP — CEP 00000-000
+                  </span>
+                </li>
+                <li>
+                  <span class="location__icon" aria-hidden="true">🕗</span>
+                  <span>
+                    <strong>Horário</strong><br />
+                    A partir das 19h00 (abertura dos portões)
+                  </span>
+                </li>
+                <li>
+                  <span class="location__icon" aria-hidden="true">🚗</span>
+                  <span>
+                    <strong>Estacionamento</strong><br />
+                    Estacionamento próprio no local, com manobrista.
+                  </span>
+                </li>
+              </ul>
+
+              <a
+                class="btn btn--primary"
+                href="https://www.google.com/maps/search/?api=1&query=Rua+das+Ac%C3%A1cias+123+Jardim+Primavera+S%C3%A3o+Paulo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Como chegar
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div
+              class="map reveal"
+              role="img"
+              aria-label="Mapa ilustrativo da localização do evento — Espaço Villa Jardim, Rua das Acácias, 123"
+            >
+              <span class="map__road map__road--h" aria-hidden="true"></span>
+              <span class="map__road map__road--v" aria-hidden="true"></span>
+              <span class="map__pin" aria-hidden="true"></span>
+              <span class="map__label" aria-hidden="true">Espaço Villa Jardim</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="galeria" aria-labelledby="galeria-titulo">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow">Clima da festa</p>
+            <h2 class="section__title" id="galeria-titulo">Galeria</h2>
+            <p class="section__subtitle">Um pouco da atmosfera que preparamos para essa noite.</p>
+          </header>
+
+          <ul class="gallery reveal">
+            <li class="gallery__item">
+              <img
+                src="./src/assets/images/galeria-1.svg"
+                alt="Ilustração de um bolo de aniversário decorado"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./src/assets/images/galeria-2.svg"
+                alt="Ilustração de balões coloridos de festa"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./src/assets/images/galeria-3.svg"
+                alt="Ilustração de duas taças brindando"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./src/assets/images/galeria-4.svg"
+                alt="Ilustração de notas musicais representando a trilha sonora da festa"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./src/assets/images/galeria-5.svg"
+                alt="Ilustração de caixas de presente"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./src/assets/images/galeria-6.svg"
+                alt="Ilustração de brilhos e confetes celebrando"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="rsvp" aria-labelledby="rsvp-titulo">
+        <div class="container rsvp">
+          <header class="section__header reveal">
+            <p class="eyebrow">Sua presença é importante</p>
+            <h2 class="section__title" id="rsvp-titulo">Confirme sua presença</h2>
+            <p class="section__subtitle">
+              Por favor, confirme até <strong>01 de agosto de 2027</strong> para que possamos
+              organizar tudo com carinho.
+            </p>
+          </header>
+
+          <div class="rsvp__card reveal">
+            <form class="form" id="rsvpForm" novalidate>
+              <div class="form__grid">
+                <div class="field">
+                  <label for="nome">
+                    Nome completo <span class="field__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    autocomplete="name"
+                    placeholder="Ex.: Maria Silva"
+                    required
+                    aria-describedby="erro-nome"
+                    enterkeyhint="next"
+                  />
+                  <span class="field__error" id="erro-nome" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="email">
+                    E-mail <span class="field__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    inputmode="email"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    placeholder="Ex.: maria@email.com"
+                    required
+                    aria-describedby="erro-email"
+                    enterkeyhint="next"
+                  />
+                  <span class="field__error" id="erro-email" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="acompanhantes">Quantidade de acompanhantes</label>
+                  <select
+                    id="acompanhantes"
+                    name="acompanhantes"
+                    aria-describedby="erro-acompanhantes"
+                  >
+                    <option value="0">Nenhum — vou sozinho(a)</option>
+                    <option value="1">1 acompanhante</option>
+                    <option value="2">2 acompanhantes</option>
+                    <option value="3">3 acompanhantes</option>
+                    <option value="4">4 acompanhantes</option>
+                    <option value="5">5 acompanhantes</option>
+                  </select>
+                  <span class="field__error" id="erro-acompanhantes" role="alert"></span>
+                </div>
+
+                <div class="field field--full">
+                  <label for="mensagem">Mensagem (opcional)</label>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="4"
+                    maxlength="300"
+                    placeholder="Deixe um recado carinhoso ou informe restrições alimentares."
+                    aria-describedby="erro-mensagem"
+                  ></textarea>
+                  <span class="field__error" id="erro-mensagem" role="alert"></span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block">Confirmar presença</button>
+
+              <p class="form__note">
+                <span aria-hidden="true">🔒</span>
+                Formulário demonstrativo: nenhum dado é enviado ou armazenado.
+              </p>
+            </form>
+
+            <div
+              class="form-success"
+              id="formSuccess"
+              role="status"
+              aria-live="polite"
+              tabindex="-1"
+              hidden
+            >
+              <span class="form-success__icon" aria-hidden="true">🎉</span>
+              <div>
+                <h3 class="form-success__title">Presença confirmada!</h3>
+                <p class="form-success__text">
+                  Obrigado, <strong id="successName">convidado</strong>! Sua confirmação foi
+                  registrada (demonstração). Mal podemos esperar para celebrar com você.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="informacoes" aria-labelledby="informacoes-titulo">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow">Antes de vir</p>
+            <h2 class="section__title" id="informacoes-titulo">Informações importantes</h2>
+          </header>
+
+          <div class="info-grid reveal">
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">👔</span>
+              <h3 class="card__title">Dress code</h3>
+              <p class="card__text">
+                Traje esporte fino. Roupas confortáveis para dançar são bem-vindas.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">🅿️</span>
+              <h3 class="card__title">Estacionamento</h3>
+              <p class="card__text">
+                Estacionamento próprio no local, com manobrista incluso e vagas para pessoas com
+                deficiência.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">🍽️</span>
+              <h3 class="card__title">Restrições alimentares</h3>
+              <p class="card__text">
+                O cardápio inclui opções vegetarianas. Informe restrições no formulário de
+                confirmação.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">📞</span>
+              <h3 class="card__title">Contato</h3>
+              <p class="card__text">
+                Telefone/WhatsApp: <a href="tel:+5511900000000">(11) 90000-0000</a><br />
+                E-mail: <a href="mailto:aniversario@exemplo.com">aniversario@exemplo.com</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <p class="footer__title">Aniversário de Uálace Brito</p>
+          <p class="footer__date">15 de agosto de 2027 · Espaço Villa Jardim</p>
+          <p class="footer__message">
+            Obrigado por fazer parte da minha história. Nos vemos lá! 🥂
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-labelledby="footer-nav-titulo">
+          <h2 class="footer__heading" id="footer-nav-titulo">Navegação</h2>
+          <ul class="footer__list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#local">Local</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#rsvp">Confirmar presença</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__nav">
+          <h2 class="footer__heading" id="footer-contato-titulo">Contato</h2>
+          <ul class="footer__list" aria-labelledby="footer-contato-titulo">
+            <li><a href="tel:+5511900000000">(11) 90000-0000</a></li>
+            <li><a href="mailto:aniversario@exemplo.com">aniversario@exemplo.com</a></li>
+            <li><a href="#topo">Voltar ao topo ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <p>
+          &copy; <span id="anoAtual">2027</span> Aniversário de Uálace Brito. Projeto acadêmico de
+          desenvolvimento web.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

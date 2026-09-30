@@ -1,0 +1,119 @@
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.field__required {
+  color: var(--pink);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-sm);
+  background: rgb(0 0 0 / 0.28);
+  color: var(--text);
+  font-size: 0.9375rem;
+  transition:
+    border-color var(--t) ease,
+    box-shadow var(--t) ease,
+    background-color var(--t) ease;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.6;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #6e6688;
+}
+
+.field input:hover,
+.field select:hover,
+.field textarea:hover {
+  border-color: rgb(255 255 255 / 0.16);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgb(0 0 0 / 0.4);
+  box-shadow: 0 0 0 3px rgb(227 188 106 / 0.16);
+}
+
+.field:has([aria-invalid="true"]) input,
+.field:has([aria-invalid="true"]) textarea,
+.field:has([aria-invalid="true"]) select,
+.field.has-error input,
+.field.has-error textarea,
+.field.has-error select {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgb(255 107 129 / 0.14);
+}
+
+.field__error {
+  min-height: 1em;
+  font-size: 0.78rem;
+  color: var(--danger-soft);
+  line-height: 1.4;
+}
+
+.field__error:empty {
+  display: none;
+}
+
+.field select {
+  appearance: none;
+  padding-right: 2.6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23e3bc6a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  cursor: pointer;
+}
+
+.field select option {
+  background: var(--surface-solid);
+  color: var(--text);
+}
+
+.form__note {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (width <= 720px) {
+  .form__grid {
+    grid-template-columns: 1fr;
+  }
+}
