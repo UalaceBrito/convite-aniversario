@@ -21,4 +21,17 @@ test.describe('Navegação', () => {
     await page.goto('/');
     await expect(page.locator('[data-unit="dias"]')).not.toHaveText('');
   });
+
+  test('carrega os dados da programação e da galeria via Fetch', async ({ page }) => {
+    const dataRequests = [];
+    page.on('request', (request) => {
+      if (request.url().includes('/data/')) dataRequests.push(request.url());
+    });
+
+    await page.goto('/');
+    await expect(page.locator('[data-schedule] .schedule__item')).toHaveCount(5);
+    await expect(page.locator('[data-gallery] .gallery__item')).toHaveCount(6);
+    await expect(page.locator('[data-event-name]').first()).toHaveText('Uálace Brito');
+    expect(dataRequests).toHaveLength(3);
+  });
 });

@@ -108,7 +108,9 @@
       <div class="container header__inner">
         <a class="brand" href="#topo" aria-label="Ir para o topo da página">
           <span class="brand__mark" aria-hidden="true">🎂</span>
-          <span class="brand__text"> Aniversário <strong>Uálace Brito</strong> </span>
+          <span class="brand__text">
+            Aniversário <strong data-event-name>Uálace Brito</strong>
+          </span>
         </a>
 
         <button
@@ -149,13 +151,16 @@
     </header>
 
     <main id="conteudo">
+      <p class="container" data-event-data-error role="alert" hidden>
+        Não foi possível atualizar os dados do convite. Exibindo as informações disponíveis.
+      </p>
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero__inner">
           <div class="hero__content reveal">
             <p class="eyebrow">Você é meu convidado especial</p>
             <h1 class="hero__title" id="hero-title">
               Meu Aniversário
-              <span class="hero__title-name">Uálace Brito</span>
+              <span class="hero__title-name" data-event-name>Uálace Brito</span>
             </h1>
             <p class="hero__tagline">
               Uma noite especial para celebrar mais um ano de histórias, conquistas e novos
@@ -167,21 +172,21 @@
                 <span class="hero__meta-icon" aria-hidden="true">📅</span>
                 <span class="hero__meta-text">
                   <strong>Data</strong>
-                  <span>15 de agosto de 2027</span>
+                  <span data-event-date>15 de agosto de 2027</span>
                 </span>
               </li>
               <li>
                 <span class="hero__meta-icon" aria-hidden="true">🕗</span>
                 <span class="hero__meta-text">
                   <strong>Horário</strong>
-                  <span>19h00</span>
+                  <span data-event-start-time>19h00</span>
                 </span>
               </li>
               <li>
                 <span class="hero__meta-icon" aria-hidden="true">📍</span>
                 <span class="hero__meta-text">
                   <strong>Local</strong>
-                  <span>Espaço Villa Jardim</span>
+                  <span data-event-location>Espaço Villa Jardim</span>
                 </span>
               </li>
             </ul>
@@ -277,23 +282,23 @@
             <dl class="summary">
               <div class="summary__row">
                 <dt>Data</dt>
-                <dd>15 de agosto de 2027</dd>
+                <dd data-event-date>15 de agosto de 2027</dd>
               </div>
               <div class="summary__row">
                 <dt>Horário</dt>
-                <dd>19h00 às 00h00</dd>
+                <dd data-event-time>19h00 às 00h00</dd>
               </div>
               <div class="summary__row">
                 <dt>Local</dt>
-                <dd>Espaço Villa Jardim</dd>
+                <dd data-event-location>Espaço Villa Jardim</dd>
               </div>
               <div class="summary__row">
                 <dt>Traje</dt>
-                <dd>Esporte fino</dd>
+                <dd data-event-dress-code>Esporte fino</dd>
               </div>
               <div class="summary__row">
                 <dt>Confirmação</dt>
-                <dd>Até 01 de agosto de 2027</dd>
+                <dd>Até <span data-event-rsvp-deadline>01 de agosto de 2027</span></dd>
               </div>
             </dl>
           </aside>
@@ -310,7 +315,7 @@
             </p>
           </header>
 
-          <ol class="schedule reveal">
+          <ol class="schedule reveal" data-schedule>
             <li class="schedule__item">
               <span class="schedule__time">19:00</span>
               <div class="schedule__body">
@@ -359,22 +364,23 @@
 
           <div class="location">
             <div class="location__info reveal">
-              <h3 class="location__name">Espaço Villa Jardim</h3>
+              <h3 class="location__name" data-event-location>Espaço Villa Jardim</h3>
 
               <ul class="location__list">
                 <li>
                   <span class="location__icon" aria-hidden="true">📍</span>
                   <span>
                     <strong>Endereço</strong><br />
-                    Rua das Acácias, 123 — Jardim Primavera<br />
-                    São Paulo / SP — CEP 00000-000
+                    <span data-event-address>
+                      Rua das Acácias, 123 — Jardim Primavera, São Paulo / SP — CEP 00000-000
+                    </span>
                   </span>
                 </li>
                 <li>
                   <span class="location__icon" aria-hidden="true">🕗</span>
                   <span>
                     <strong>Horário</strong><br />
-                    A partir das 19h00 (abertura dos portões)
+                    A partir das <span data-event-start-time>19h00</span> (abertura dos portões)
                   </span>
                 </li>
                 <li>
@@ -389,6 +395,7 @@
               <a
                 class="btn btn--primary"
                 href="https://www.google.com/maps/search/?api=1&query=Rua+das+Ac%C3%A1cias+123+Jardim+Primavera+S%C3%A3o+Paulo"
+                data-event-map
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -405,7 +412,9 @@
               <span class="map__road map__road--h" aria-hidden="true"></span>
               <span class="map__road map__road--v" aria-hidden="true"></span>
               <span class="map__pin" aria-hidden="true"></span>
-              <span class="map__label" aria-hidden="true">Espaço Villa Jardim</span>
+              <span class="map__label" data-event-map-label aria-hidden="true"
+                >Espaço Villa Jardim</span
+              >
             </div>
           </div>
         </div>
@@ -419,7 +428,7 @@
             <p class="section__subtitle">Um pouco da atmosfera que preparamos para essa noite.</p>
           </header>
 
-          <ul class="gallery reveal">
+          <ul class="gallery reveal" data-gallery>
             <li class="gallery__item">
               <img
                 src="./src/assets/images/galeria-1.svg"

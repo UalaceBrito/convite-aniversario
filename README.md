@@ -2,6 +2,8 @@
 
 Convite digital interativo e responsivo, com contagem regressiva, galeria, informações da festa e formulário de confirmação de presença.
 
+As informações do evento, a programação e a galeria são carregadas de arquivos JSON usando a Fetch API. Se uma requisição falhar, o convite mantém o conteúdo inicial e informa que não foi possível atualizar os dados. Edite os arquivos em `public/data/` para atualizar o convite.
+
 ## Executar localmente
 
 Requisitos: Node.js 20.11 ou superior e npm.
